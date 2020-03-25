@@ -6,6 +6,8 @@ const Character = props => {
   const [loadedCharacter, setLoadedCharacter] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
+  console.log("rendering");
+
   // shouldComponentUpdate(nextProps, nextState) {
   //   console.log('shouldComponentUpdate');
   //   return (
@@ -93,4 +95,4 @@ const Character = props => {
   return content;
 };
 
-export default Character;
+export default React.memo(Character);
